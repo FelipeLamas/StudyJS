@@ -31,3 +31,16 @@ if(isNumPor5){
 
 // Divisivel por 5 usando else if
 
+const num = Number(prompt('Informe um valor para verificar se é divisivel por 5: '))
+const isNumPor5 = (num % 5) === 0
+
+if(num === 0){
+    alert('O número informado é inválido')
+} else if(isNumPor5){
+    alert('Sim')
+} else {
+    alert('Não')
+}
+
+
+
