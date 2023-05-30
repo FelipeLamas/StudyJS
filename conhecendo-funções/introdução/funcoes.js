@@ -24,7 +24,19 @@ function quadrado(valor){
 const quadradoDez = quadrado(10);
 console.log(quadradoDez);
 
+// Calculo de acrescimo de juros
+
+function incrementoJuros(valor, percentualJuros){
+    const valorDeAcrescimo = (percentualJuros / 100) * valor
+    return valor + valorDeAcrescimo;
+}
+
+console.log(incrementoJuros(100, 10));
+console.log(incrementoJuros(65, 13));
+console.log(incrementoJuros(78, 5));
+
 */
+
 
 
 
