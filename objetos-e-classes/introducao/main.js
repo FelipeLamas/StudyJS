@@ -33,14 +33,19 @@ class pessoa {
     nome;
     idade;
 
-    constructor(nome, idade){
+    constructor(nome, idade, peso, altura){
         this.nome = nome
         this.idade = idade
+        this.peso = peso
+        this.altura = altura
+        this.imc = peso / Math.pow(altura, 2);
+        this.anoDeNascimento = 2023 - idade;
     }
     descrever () {
-        console.log(`Meu nome é ${this.nome} e tenho ${this.idade} anos de idade!`)
+        console.log(`Meu nome é ${this.nome} e tenho ${this.idade} anos de idade, nascido em ${this.anoDeNascimento}, meu imc atual è ${this.imc.toFixed(2)}`);
     }
 }
 
-const felipe = new pessoa('Felipe Lamas', 29)
+const felipe = new pessoa('Felipe Lamas', 29, 85, 1.70);
 felipe.descrever();
+console.log(felipe)
