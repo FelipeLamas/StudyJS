@@ -1,4 +1,4 @@
-class pessoa {
+class Pessoa {
     nome;
     idade;
 
@@ -25,8 +25,8 @@ function compararPessoas(p1, p2){
     }
 }
 
-const felipe = new pessoa('Felipe Lamas', 29, 85, 1.62);
-const gabriela = new pessoa('Gabriela Bastos', 28, 65, 1.65);
+const felipe = new Pessoa('Felipe Lamas', 29, 85, 1.62);
+const gabriela = new Pessoa('Gabriela Bastos', 28, 65, 1.65);
 
 compararPessoas(felipe, gabriela);
 
