@@ -28,7 +28,7 @@ function porcentagem(desconto){
     return (salarioBruto - (salarioBruto * (desconto / 100)));
 }
 
-function salarioComDescontoImpostoBaseSalarial(){
+function salarioComDesImpostoAliquotaBaseSalarial(){
     if(salarioBruto >= 0 && salarioBruto <= 1100){
         return porcentagem(5);
     } else if(salarioBruto > 1100 && salarioBruto <= 2500){
@@ -39,11 +39,14 @@ function salarioComDescontoImpostoBaseSalarial(){
 }
 
 function salarioPg(){
-    return salarioComDescontoImpostoBaseSalarial() + addBeneficios;
+    return salarioComDesImpostoAliquotaBaseSalarial() + addBeneficios;
 }
 
-print(`Salário Liquido: ${salarioComDescontoImpostoBaseSalarial()}`);
-print(`Salário + Beneficios: ${salarioPg()}`);
+const salarioLiquido = salarioComDesImpostoAliquotaBaseSalarial();
+const salarioComBenefio = salarioPg();
+
+print(`Salário Liquido: ${salarioLiquido}`);
+print(`Salário + Beneficios: ${salarioComBenefio}`);
 
 
 

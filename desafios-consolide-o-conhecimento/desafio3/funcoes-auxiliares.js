@@ -1,4 +1,4 @@
-let entradas = [2000, 250];
+let entradas = [1790, 852];
 let i = 0;
 
 function gets(){
