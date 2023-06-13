@@ -47,3 +47,6 @@ const salarioComBenefio = salarioPg();
 
 print(`Salário Liquido: ${salarioLiquido}`);
 print(`Salário + Beneficios: ${salarioComBenefio}`);
+
+
+
